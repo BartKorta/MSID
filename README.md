@@ -35,12 +35,14 @@ Firstly, let's explain parameters.
 
 So, first Convolution layer has 64 different matrices which finds different shapes and edges in the image. This layer passes analyzed matrices to second Convolution layer which has 128 matrices, which analyze images. This matrices size is bigger (4x4). It finds another shapes on previously examined matrices (images). Also padding is enable, so our matrix size will be always equal 28x28.
 Here is an example of how convolution layer works:
+
 <img src="https://github.com/BartKorta/MSID/blob/master/images/conv.png">
         
 After two convolution layers, received matrices go to Pooling Layer.
 Pool_size=(2,2) means that we divide our 28x28 matrix on: 196 2x2 matrices. And from every matrix we rewrite only the biggest number, to a new matrix (14x14)
 Pooling layer simply "compresses" matrices. It receives 28x28 matrices and and returs 14x14 more dense matrix, with the most relevant pixels. So in the result calculations are faster (less cells to analyze later, reduced complexity of calculations).
 Example, below:
+
 <img src="https://github.com/BartKorta/MSID/blob/master/images/pooling.png">
         
 Dropout is a subsequent layer, which drops out some connnections in the network. The rate which is settled, corresponds to probabilty of removing a connection between neurons from the previous layer and the next layer.
