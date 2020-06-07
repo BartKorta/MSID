@@ -2,7 +2,7 @@
 ## Date: 07.06.2020
 
 ### Introduction
-Task to do: Classify fashion-mnist dataset 
+Classification of fashion-mnist dataset 
 Available input data: 60 000 images of clothes with corresponding labels < training data,   
 10 000 images and labels < test data
 The model which classify test images to corresponding labels, has been taught only with training dataset.
@@ -33,7 +33,7 @@ Firstly, let's explain parameters.
 * kernel_size - number which represents matrix size, ex. 3 stands for 3x3 matrix
 * activaction relu - it means that every number in cell is going to be replaced with max(0, number). Simply every negative number is going to be replaced with 0.
 
-So, first Convolution layer has 64 different matrices which finds different shapes in the image. This layer passes analyzed matrices to second Convolution layer which has 128 matrices, which analyze images. This matrices size is bigger (4x4). It finds another shapes on previously examined matrices (images).
+So, first Convolution layer has 64 different matrices which finds different shapes in the image. This layer passes analyzed matrices to second Convolution layer which has 128 matrices, which analyze images. This matrices size is bigger (4x4). It finds another shapes on previously examined matrices (images). Also padding is enable so our matrix size will be always equal 28x28.
 
 <<photo>>
         
@@ -52,7 +52,7 @@ Dense layer is just a typical layer in neural network. It connects neurons from 
 The last Dense layer has size equals 10. It is our output layer. The output layer must be exactly the same size as amount of differnet lables.
 
 ### Results
-The accuracy of the model is very satisfying. > 92.34% correctly clasiffied labels to images.
+The accuracy of the model is very satisfying. > 92.57% correctly clasiffied images.
 <<photo>>
 As you can see on attached screenshot (similar methods implemented), my model seems to be more precise.
 An average time of learning was about 45 minutes. (4-5 minutes per one epoch).
@@ -69,4 +69,4 @@ restore_model(test_images,test_labels)
 #new_model(train_images, train_labels, test_images, test_labels)
 ```
 If you install keras and tensorflow then dataset (training images, labels and test images,labels) loads automatically.
-Also to reload optimal weigths you must put a "fashion-mnist-results" directory (you can find it in this github repo) with the code in the samo directory.
+Also to reload optimal weigths you must put a "fashion-mnist-results3" directory (you can find it in this github repo) with the code in the samo directory.
