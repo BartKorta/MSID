@@ -53,7 +53,7 @@ The last Dense layer has size equals 10. It is our output layer. The output laye
 
 ### Results
 The accuracy of the model is very satisfying. > 92.57% correctly clasiffied images.
-<<photo>>
+<img src="https://github.com/BartKorta/MSID/blob/master/images/res.png">
 As you can see on attached screenshot (similar methods implemented), my model seems to be more precise.
 An average time of learning was about 45 minutes. (4-5 minutes per one epoch).
 ### Usage
