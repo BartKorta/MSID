@@ -61,6 +61,7 @@ The last Dense layer has size equals 10. It is our output layer. The output laye
 I've set batch size=500 and epochs=10 which means that every 500 processed images the model will try to minimaize a classification error, and optimize weights to classify correctly. 10 epochs means that it will go through our dataset 10 times, so it should be able to notice more relevent details every epoch.
 
 ### Results
+<img src="https://github.com/BartKorta/MSID/blob/master/images/acc.png">
 The accuracy of the model is very satisfying. > 92.57% correctly clasiffied images.
 <img src="https://github.com/BartKorta/MSID/blob/master/images/res.png">
 As you can see on attached screenshot (similar methods implemented), my model seems to be more precise.
