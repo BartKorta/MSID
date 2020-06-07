@@ -1,6 +1,6 @@
 # Fashion Mnist
-#Author: Bartosz Korta
-#Date: 07.06.2020
+# Author: Bartosz Korta
+# Date: 07.06.2020
 
 ```
 cout<<"hello";
