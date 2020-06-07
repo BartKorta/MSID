@@ -33,5 +33,10 @@ Firstly, let's explain parameters.
 * kernel_size - number which represents matrix size, ex. 3 stands for 3x3 matrix
 * activaction relu - it means that every number in cell is going to be replaced with max(0, number). Simply every negative number is going to be replaced with 0.
 
-```
+So, first Convolution layer has 64 different matrices which finds different shapes in the image. This layer passes analyzed matrices to second Convolution layer which has 128 matrices, which analyze images. This matrices size is bigger (4x4). It finds another shapes on previously examined matrices (images).
+Example which illustrates how Convolution layer works:
+
+< Here Photo >
+
+After two convolution layers, received matrices go to Pooling Layer.
 
