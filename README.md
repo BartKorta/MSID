@@ -3,10 +3,15 @@
 
 ### Introduction
 Classification of fashion-mnist dataset 
+
 Available input data: 60 000 images of clothes with corresponding labels < training data,   
+
 10 000 images of clothes and labels < test data
+
 The model which classify test images to corresponding labels, has been taught only with training dataset.
+
 Every image is black and white, with 28x28 pixels in frame. It means that we can consider an image as matrix 28x28 in which every cell corresponds to its color. (From 0 to 255, 0-white, 255-black).
+
 Output: The accuracy of the model. (The percentage of correctly classifed images). Also a plot which illustrates examples of how model predicts what an image contains.
 The solution that I've used is called Convolutional Neural Network.
 
