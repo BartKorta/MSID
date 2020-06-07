@@ -52,7 +52,10 @@ Dense layer is just a typical layer in neural network. It connects neurons from 
 The last Dense layer has size equals 10. It is our output layer. The output layer must be exactly the same size as amount of differnet lables.
 
 ### Results
-
+The accuracy of the model is very satisfying. > 92.34% correctly clasiffied labels to images.
+<<photo>>
+As you can see on attached screenshot (similar methods implemented), my model seems to be more precise.
+An average time of learning was about 45 minutes. (4-5 minutes per one epoch).
 ### Usage
 In order to run and compile the code you have to install Pyhton3 and the following libraries: tensorflow, keras, matploid and numpy.
 Also I've implemented to methods which run the program:
@@ -65,3 +68,5 @@ Example:
 restore_model(test_images,test_labels)
 #new_model(train_images, train_labels, test_images, test_labels)
 ```
+If you install keras and tensorflow then dataset (training images, labels and test images,labels) loads automatically.
+Also to reload optimal weigths you must put a "fashion-mnist-results" directory (you can find it in this github repo) with the code in the samo directory.
