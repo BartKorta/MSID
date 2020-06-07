@@ -42,6 +42,7 @@ Pool_size=(2,2) means that we divide our 28x28 matrix on: 196 2x2 matrices. And 
 Pooling layer simply "compresses" matrices. It receives 28x28 matrices and and returs 14x14 more dense matrix, with the most relevant pixels. So in the result calculations are faster (less cells to analyze later, reduced complexity of calculations).
 
 <<photo>>
+        
 Dropout is subsequent layer, which drops out some comnnections in the network. The rate which is settled, corresponds to probabilty of removing a connection between neurons from previous layer to next layer.
 Why we do it? To avoid overfitting. This layer forces matrices to find another path to succes. (Because some connections won't be available.) But, you must be aware of setting to high rate, model won't be able to learn properly. (Underfitting)
         
