@@ -60,3 +60,8 @@ Also I've implemented to methods which run the program:
 * new_model() - you can run this function to learn again the model, for example if you wnat to verify my solution.
 
 Boths methods are called in the bottom section of the code. Remeber to run only one in the same time! (Comment a line you won't use.)
+Example:
+```
+restore_model(test_images,test_labels)
+#new_model(train_images, train_labels, test_images, test_labels)
+```
