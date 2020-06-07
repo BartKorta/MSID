@@ -34,9 +34,16 @@ Firstly, let's explain parameters.
 * activaction relu - it means that every number in cell is going to be replaced with max(0, number). Simply every negative number is going to be replaced with 0.
 
 So, first Convolution layer has 64 different matrices which finds different shapes in the image. This layer passes analyzed matrices to second Convolution layer which has 128 matrices, which analyze images. This matrices size is bigger (4x4). It finds another shapes on previously examined matrices (images).
-Example which illustrates how Convolution layer works:
 
-< Here Photo >
-
+<<photo>>
+        
 After two convolution layers, received matrices go to Pooling Layer.
+Pool_size=(2,2) means that we divide our 28x28 matrix on: 196 2x2 matrices. And from every matrix we rewrite only the biggest number, to a new matrix (14x14)
+Pooling layer simply "compresses" matrices. It receives 28x28 matrices and and returs 14x14 more dense matrix, with the most relevant pixels. So in the result calculations are faster (less cells to analyze later, reduced complexity of calculations).
+
+<<photo>>
+Dropout is subsequent layer, which drops out some comnnections in the network. The rate which is settled, corresponds to probabilty of removing a connection between neurons from previous layer to next layer.
+Why we do it? To avoid overfitting. This layer forces matrices to find another path to succes. (Because some connections won't be available.) But, you must be aware of setting to high rate, model won't be able to learn properly. (Underfitting)
+        
+Flatten layer simply flattens our 14x14 matrix to vector which size is equal 196.
 
