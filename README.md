@@ -67,6 +67,7 @@ The accuracy of the model is very satisfying. > 92.57% correctly clasiffied imag
 As you can see on attached screenshot (similar methods implemented), my model seems to be more precise.
 An average time of model's learning was about 45 minutes. (4-5 minutes per one epoch).
 <img src="https://github.com/BartKorta/MSID/blob/master/images/resPlot.png">
+
 ### Usage
 In order to run and compile the code you have to install Pyhton3 and the following libraries: tensorflow, keras, matploid and numpy.
 Also I've implemented two methods which run the program:
@@ -80,5 +81,6 @@ restore_model(test_images,test_labels)
 #new_model(train_images, train_labels, test_images, test_labels)
 ```
 If you install keras and tensorflow then dataset (training images, labels and test images,labels) loads automatically.
-Also to reload optimal weigths you must put a "fashion-mnist-results3" directory (it contains files which are neccesary to restore my model, you can find it in my github repo) with the code in the same directory.
+Also to reload optimal weigths you must put a "fashion-mnist-results3" directory (it contains files which are neccesary to restore my model, you can find a link to google drive in my github repo, over 25MB so I counldn't uploaded on github) with the code in the same directory.
 Remeber to download fashion_mnist.py file which containes code and fashion_mnist_result3 dir. with model's weights
+I also recommend running the code as an administrator to avoid "Permission denied" Error.
