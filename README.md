@@ -82,5 +82,7 @@ restore_model(test_images,test_labels)
 ```
 If you install keras and tensorflow then dataset (training images, labels and test images,labels) loads automatically.
 Also to reload optimal weigths you must put a "fashion-mnist-results3" directory (it contains files which are neccesary to restore my model, you can find a link to google drive in my github repo, over 25MB so I counldn't uploaded on github) with the code in the same directory.
-Remeber to download fashion_mnist.py file which containes code and fashion_mnist_result3 dir. with model's weights
+
+Remeber to download fashion_mnist.py file which containes code and fashion_mnist_result3 directory with model's weights<- LINK TO IT IN "WEIGHTS - GOOGLE DRIVE LINK" ON THIS GITHUB REPOSITORY.
+
 I also recommend running the code as an administrator to avoid "Permission denied" Error.
