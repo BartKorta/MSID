@@ -26,7 +26,7 @@ model = keras.Sequential([
         keras.layers.Dense(10, activation='relu')
     ])
 ```
-My model containes a few layers. First three layers are responsible for feature extraction.
+My sequential model containes a few layers. First three layers are responsible for feature extraction.
 Convolution layer detectes shapes and edges from image. How does it work?
 Firstly, let's explain parameters.
 * filters - number of matrices
@@ -46,5 +46,17 @@ Pooling layer simply "compresses" matrices. It receives 28x28 matrices and and r
 Dropout is subsequent layer, which drops out some comnnections in the network. The rate which is settled, corresponds to probabilty of removing a connection between neurons from previous layer to next layer.
 Why we do it? To avoid overfitting. This layer forces matrices to find another path to succes. (Because some connections won't be available.) But, you must be aware of setting to high rate, model won't be able to learn properly. (Underfitting)
         
-Flatten layer simply flattens our 14x14 matrix to vector which size is equal 196.
+Flatten layer simply flattens our 14x14 matrix to vector which size is equal 196. That layer starts blocks of "clasiffication layers"/
 
+Dense layer is just a typical layer in neural network. It connects neurons from its prevoius layer. Between layer dense layer no.2 and no.3  I've also implemented dropout layer to avoid overfitting.
+The last Dense layer has size equals 10. It is our output layer. The output layer must be exactly the same size as amount of differnet lables.
+
+### Results
+
+### Usage
+In order to run and compile the code you have to install Pyhton3 and the following libraries: tensorflow, keras, matploid and numpy.
+Also I've implemented to methods which run the program:
+* restore_model() - this method reads optimal weights of the model. Later it makes prediction for the test dataset, based on the loaded weights.
+* new_model() - you can run this function to learn again the model, for example if you wnat to verify my solution.
+
+Boths methods are called in the bottom section of the code. Remeber to run only one in the same time! (Comment a line you won't use.)
